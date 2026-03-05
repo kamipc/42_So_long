@@ -29,5 +29,5 @@ there are multiple maps available in the **maps** folder, but any map can be cre
 - `1` for **wall** (the map must be surrounded by walls)
 - `0` for **walkable spaces**
 - `E` for the **exit** (there must only be **one**)
-- `P` for the **player** starting position (there must only be **one**)
+- `P` for the **player starting position** (there must only be **one**)
 - `C` for **collectibles** (there must be atleast **one**)
