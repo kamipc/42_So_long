@@ -7,6 +7,8 @@
 **So_long** is our introduction to the school's graphical library, and with it learn to manage windows, events, textures, etc.
 The objective here is to create a simple game that will have a movable player character that can be moved through **wasd** or **↑ ↓ → ←** keys, the player can then collect itens to unlock the exit and after collecting all and entering the exit point the game ends.
 
+Bellow is a sneak peak of how my so_long looks:
+
 <img width="293" height="200" alt="image" src="https://github.com/user-attachments/assets/aa018b67-eaff-4776-ac7b-00e20b41afd9" />
 
 ## Instructions
