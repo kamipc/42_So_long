@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   so_long.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: cpinho-c <cpinho-c@student.42.fr>          #+#  +:+       +#+        */
+/*   By: cpinho-c <cpinho-c@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025-05-18 13:55:48 by cpinho-c          #+#    #+#             */
-/*   Updated: 2025-05-18 13:55:48 by cpinho-c         ###   ########.fr       */
+/*   Created: 2025/05/18 13:55:48 by cpinho-c          #+#    #+#             */
+/*   Updated: 2026/03/05 23:35:13 by cpinho-c         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,7 @@ int	main(int ac, char **av)
 
 	if (ac != 2)
 	{
-		ft_printf("%s", ERROR_INV_ARGS);
+		ft_printf(1, "%s", ERROR_INV_ARGS);
 		exit(1);
 	}
 	validade_map_file(av[1]);
@@ -38,7 +38,7 @@ int	main(int ac, char **av)
 	read_map(av[1], game);
 	check_valid_map(game);
 	init_mlx(game);
-	ft_printf(1,"move counter:%i\n", game->move_count);
+	ft_printf(1, "move counter:%i\n", game->move_count);
 	mlx_hook(game->win, 2, 1L << 0, hook_handler, game);
 	mlx_hook(game->win, 17, 0, close_game, game);
 	mlx_loop(game->mlx);
